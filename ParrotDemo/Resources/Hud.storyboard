@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="brO-bU-IcO">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hud View Controller-->
+        <scene sceneID="GfM-B4-abe">
+            <objects>
+                <viewController id="brO-bU-IcO" customClass="HudViewController" customModule="ParrotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z06-8N-NxF">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMK-vF-3Tj" customClass="GSStreamView">
+                                <rect key="frame" x="155" y="52" width="504" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4om-Lp-EgD" customClass="OverlayView" customModule="AnafiDetection">
+                                <rect key="frame" x="155" y="52" width="504" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33R-qe-Jc9" userLabel="Joysticks view">
+                                <rect key="frame" x="58" y="78" width="696" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcU-Xx-X6k" userLabel="Left Joystick" customClass="JoystickView" customModule="ParrotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="leftJoystickUpdate:" destination="brO-bU-IcO" eventType="valueChanged" id="XT4-yq-vov"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-4f-Hky" userLabel="Right Joystick" customClass="JoystickView" customModule="ParrotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="476" y="0.0" width="220" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="rightJoystickUpdate:" destination="brO-bU-IcO" eventType="valueChanged" id="cvd-tc-ySs"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-bu-JX8">
+                                <rect key="frame" x="382" y="306" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.01026766514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" image="ic_flight_takeoff_48pt"/>
+                                <state key="selected" image="ic_flight_takeoff_48pt"/>
+                                <state key="highlighted" image="ic_flight_takeoff_48pt"/>
+                                <connections>
+                                    <action selector="takeOffLand:" destination="brO-bU-IcO" eventType="touchUpInside" id="mFU-Fr-LpQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a3-gz-6wH">
+                                <rect key="frame" x="64" y="20" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="brO-bU-IcO" eventType="touchUpInside" id="4TM-Oa-zFO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jvX-yM-Q1h"/>
+                    </view>
+                    <connections>
+                        <outlet property="overlayView" destination="4om-Lp-EgD" id="bVQ-fc-xfg"/>
+                        <outlet property="streamView" destination="tMK-vF-3Tj" id="j5K-YR-3uT"/>
+                        <outlet property="takeoffLandButton" destination="MaW-bu-JX8" id="zhO-hT-1GQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myn-fH-FSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575.61576354679801" y="82.400000000000006"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_flight_takeoff_48pt" width="48" height="48"/>
+    </resources>
+</document>
