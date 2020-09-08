@@ -39,6 +39,10 @@ enum MobileNetSSD {
 }
 ```
 
+## Custom Dataset
+
+If you would like to train an object detector, you can follow our example colab notebook [few_shot_object_detection_tflite.ipynb](few_shot_object_detection_tflite.ipynb).
+
 ## Acknowledgements
 
 This repository was heavily influenced by the following:
