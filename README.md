@@ -2,7 +2,7 @@
 This repository demonstrates how to train, quantize, and deploy a few-shot object detection model 
 trained on only 5 rubber-ducky images. We deploy the model on iOS for performing inference on live video captured from the Parrot Anafi drone.
 
-It is important to note that this is a proof-of-concept and not intended for production. 
+**It is important to note that this is a proof-of-concept and not intended for production.**
 
 ## Requirements
 
@@ -12,7 +12,7 @@ It is important to note that this is a proof-of-concept and not intended for pro
 
 ## App Setup
 
-Open up Terminal, cd into your top-level project directory, and run the following commands
+In your Terminal, cd into the ios directory, and run the following commands
 
 ```
 pod repo update
@@ -41,7 +41,7 @@ enum MobileNetSSD {
 
 ## Custom Dataset
 
-If you would like to train an object detector, you can follow our example colab notebook [few_shot_object_detection_tflite.ipynb](few_shot_object_detection_tflite.ipynb).
+If you would like to train a custom object detector, you can follow our example colab notebook [few_shot_object_detection_tflite.ipynb](few_shot_object_detection_tflite.ipynb) and try to get it working with your own dataset. Some Machine Learning knowledge will be required here, as the hyperparameters likely need to be tuned.
 
 ## Acknowledgements
 
