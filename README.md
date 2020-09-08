@@ -21,6 +21,9 @@ pod install
 
 Once the pods have been installed, you can open the .xcworkspace file and start coding.
 
+## Usage
+After running the app on your iPhone, you must connect to the wifi signal broadcast by your Parrot Anafi drone. Tap the table cell with your drone info to connect. After the drone connects, the drone will be kicked into the HUD screen where you can view the live video stream. Detections will be drawn on the screen.
+
 ## Object Detection
 
 This app ships with both the trained rubber-ducky detector model, as well as a model trained on the [COCO dataset](https://cocodataset.org/#home). 
@@ -41,7 +44,9 @@ enum MobileNetSSD {
 
 ## Custom Dataset
 
-If you would like to train a custom object detector, you can follow our example colab notebook [few_shot_object_detection_tflite.ipynb](few_shot_object_detection_tflite.ipynb) and try to get it working with your own dataset. Some Machine Learning knowledge will be required here, as the hyperparameters likely need to be tuned.
+If you would like to train a custom object detector, you can follow our example colab notebook [few_shot_object_detection_tflite.ipynb](few_shot_object_detection_tflite.ipynb) and try to get it working with your own dataset. Some Machine Learning knowledge will be required here, as the hyperparameters likely need to be tuned. If you decide to go this route, ensure to update the `MobileNetSSD` enum described above with your model and labelmap filenames. When dragging these files into your app, ensure that your app name is selected to Add To Target (shown below)
+
+<img src="img/add_to_target.png"/>
 
 ## Acknowledgements
 
