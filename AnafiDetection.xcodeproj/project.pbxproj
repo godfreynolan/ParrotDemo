@@ -156,9 +156,9 @@
 		187EE00222DE4701002E8550 = {
 			isa = PBXGroup;
 			children = (
-				187EE00D22DE4701002E8550 /* ParrotDemo */,
-				187EE02222DE4703002E8550 /* ParrotDemoTests */,
-				187EE02D22DE4703002E8550 /* ParrotDemoUITests */,
+				187EE00D22DE4701002E8550 /* AnafiDetection */,
+				187EE02222DE4703002E8550 /* AnafiDetectionTests */,
+				187EE02D22DE4703002E8550 /* AnafiDetectionUITests */,
 				187EE00C22DE4701002E8550 /* Products */,
 				0318DFF7F543342E583B32E1 /* Pods */,
 				BFD675AB34B83EC57491373B /* Frameworks */,
@@ -175,7 +175,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		187EE00D22DE4701002E8550 /* ParrotDemo */ = {
+		187EE00D22DE4701002E8550 /* AnafiDetection */ = {
 			isa = PBXGroup;
 			children = (
 				1822E25422E0B19B004BCFCD /* App */,
@@ -187,25 +187,25 @@
 				1822E25522E0B1A2004BCFCD /* Resources */,
 				187EE01A22DE4702002E8550 /* Info.plist */,
 			);
-			path = ParrotDemo;
+			path = AnafiDetection;
 			sourceTree = "<group>";
 		};
-		187EE02222DE4703002E8550 /* ParrotDemoTests */ = {
+		187EE02222DE4703002E8550 /* AnafiDetectionTests */ = {
 			isa = PBXGroup;
 			children = (
 				187EE02322DE4703002E8550 /* ParrotDemoTests.swift */,
 				187EE02522DE4703002E8550 /* Info.plist */,
 			);
-			path = ParrotDemoTests;
+			path = AnafiDetectionTests;
 			sourceTree = "<group>";
 		};
-		187EE02D22DE4703002E8550 /* ParrotDemoUITests */ = {
+		187EE02D22DE4703002E8550 /* AnafiDetectionUITests */ = {
 			isa = PBXGroup;
 			children = (
 				187EE02E22DE4703002E8550 /* ParrotDemoUITests.swift */,
 				187EE03022DE4703002E8550 /* Info.plist */,
 			);
-			path = ParrotDemoUITests;
+			path = AnafiDetectionUITests;
 			sourceTree = "<group>";
 		};
 		3C8BA8542501DF7D004088C1 /* Extensions */ = {
@@ -611,7 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYG5XF554D;
-				INFOPLIST_FILE = ParrotDemo/Info.plist;
+				INFOPLIST_FILE = AnafiDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +630,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYG5XF554D;
-				INFOPLIST_FILE = ParrotDemo/Info.plist;
+				INFOPLIST_FILE = AnafiDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
