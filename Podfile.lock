@@ -4,26 +4,34 @@ PODS:
   - GroundSdk (1.0.0):
     - SdkCore (= 1.0.0)
   - SdkCore (1.0.0)
-  - TensorFlowLiteC (2.3.0):
-    - TensorFlowLiteC/Core (= 2.3.0)
-  - TensorFlowLiteC/Core (2.3.0)
-  - TensorFlowLiteSwift (2.3.0):
-    - TensorFlowLiteSwift/Core (= 2.3.0)
-  - TensorFlowLiteSwift/Core (2.3.0):
-    - TensorFlowLiteC (= 2.3.0)
+  - TensorFlowLiteC (0.0.1-nightly.20200818):
+    - TensorFlowLiteC/Core (= 0.0.1-nightly.20200818)
+  - TensorFlowLiteC/Core (0.0.1-nightly.20200818)
+  - TensorFlowLiteC/CoreML (0.0.1-nightly.20200818):
+    - TensorFlowLiteC/Core
+  - TensorFlowLiteC/Metal (0.0.1-nightly.20200818):
+    - TensorFlowLiteC/Core
+  - TensorFlowLiteSwift/Core (0.0.1-nightly.20200818):
+    - TensorFlowLiteC (= 0.0.1-nightly.20200818)
+  - TensorFlowLiteSwift/CoreML (0.0.1-nightly.20200818):
+    - TensorFlowLiteC/CoreML (= 0.0.1-nightly.20200818)
+    - TensorFlowLiteSwift/Core (= 0.0.1-nightly.20200818)
+  - TensorFlowLiteSwift/Metal (0.0.1-nightly.20200818):
+    - TensorFlowLiteC/Metal (= 0.0.1-nightly.20200818)
+    - TensorFlowLiteSwift/Core (= 0.0.1-nightly.20200818)
 
 DEPENDENCIES:
   - ArsdkEngine (= 1.0.0)
   - GroundSdk (= 1.0.0)
   - SdkCore (= 1.0.0)
-  - TensorFlowLiteSwift
+  - TensorFlowLiteSwift/CoreML (~> 0.0.1-nightly)
+  - TensorFlowLiteSwift/Metal (~> 0.0.1-nightly)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - ArsdkEngine
     - GroundSdk
     - SdkCore
-  trunk:
     - TensorFlowLiteC
     - TensorFlowLiteSwift
 
@@ -31,9 +39,9 @@ SPEC CHECKSUMS:
   ArsdkEngine: 1c6086cf87e1c9033e0e76d61b21a3edcb5f93b0
   GroundSdk: 640eb77727d99a76ce1c731671b469753644ef0a
   SdkCore: 8eee3daafba05239f9f5c7ebb7fa9ee3b816e518
-  TensorFlowLiteC: 51f50caf5777f740a70e2c1a5dbdc149e7aeb50b
-  TensorFlowLiteSwift: fb152cc1eec36b25b03a23c07f5d58113170af58
+  TensorFlowLiteC: 1fd157e18ac889adb6a9914a87b16ed21a2e4ddd
+  TensorFlowLiteSwift: 799e8ed7c7b4c157150819cecac834520e040291
 
-PODFILE CHECKSUM: 5a142477f86c3681fa9f5471f6261c1933572ea4
+PODFILE CHECKSUM: d80d8246e5755a6968894108c966b107436a6d52
 
 COCOAPODS: 1.9.1

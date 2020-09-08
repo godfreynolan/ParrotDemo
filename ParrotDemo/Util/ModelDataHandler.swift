@@ -30,9 +30,13 @@ typealias FileInfo = (name: String, extension: String)
 
 /// Information about the MobileNet SSD model.
 enum MobileNetSSD {
-  static let modelInfo: FileInfo = (name: "detect", extension: "tflite")
-  static let labelsInfo: FileInfo = (name: "labelmap", extension: "txt")
+  static let modelInfo: FileInfo = (name: "ducky", extension: "tflite")
+  static let labelsInfo: FileInfo = (name: "ducky_labelmap", extension: "txt")
 }
+//enum MobileNetSSD {
+//  static let modelInfo: FileInfo = (name: "coco", extension: "tflite")
+//  static let labelsInfo: FileInfo = (name: "coco_labelmap", extension: "txt")
+//}
 
 /// This class handles all data preprocessing and makes calls to run inference on a given frame
 /// by invoking the `Interpreter`. It then formats the inferences obtained and returns the top N

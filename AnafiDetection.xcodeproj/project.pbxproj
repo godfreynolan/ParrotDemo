@@ -17,13 +17,15 @@
 		187EE01922DE4702002E8550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187EE01722DE4702002E8550 /* LaunchScreen.storyboard */; };
 		187EE02422DE4703002E8550 /* ParrotDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EE02322DE4703002E8550 /* ParrotDemoTests.swift */; };
 		187EE02F22DE4703002E8550 /* ParrotDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EE02E22DE4703002E8550 /* ParrotDemoUITests.swift */; };
+		3C338913250742DD008C85BB /* ducky.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 3C338912250742DD008C85BB /* ducky.tflite */; };
 		3C8BA8582501DF96004088C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA8552501DF96004088C1 /* UIImageExtension.swift */; };
 		3C8BA8592501DF96004088C1 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA8562501DF96004088C1 /* CVPixelBufferExtension.swift */; };
 		3C8BA85A2501DF96004088C1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA8572501DF96004088C1 /* StringExtension.swift */; };
 		3C8BA85D2501DFCA004088C1 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA85C2501DFCA004088C1 /* ModelDataHandler.swift */; };
 		3C8BA85F2501E04B004088C1 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BA85E2501E04B004088C1 /* OverlayView.swift */; };
-		3C8BA8632501E838004088C1 /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C8BA8612501E838004088C1 /* labelmap.txt */; };
-		3C8BA8642501E838004088C1 /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 3C8BA8622501E838004088C1 /* detect.tflite */; };
+		3C8BA8632501E838004088C1 /* coco_labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C8BA8612501E838004088C1 /* coco_labelmap.txt */; };
+		3C8BA8642501E838004088C1 /* coco.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 3C8BA8622501E838004088C1 /* coco.tflite */; };
+		3CCDD2AE250344FD007FFFB8 /* ducky_labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CCDD2AD250344FD007FFFB8 /* ducky_labelmap.txt */; };
 		6F5EBD6E0722F7AEB981C7FA /* Pods_AnafiDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA2A3A2F3E29DB14A618DF /* Pods_AnafiDetection.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,13 +66,15 @@
 		187EE02E22DE4703002E8550 /* ParrotDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrotDemoUITests.swift; sourceTree = "<group>"; };
 		187EE03022DE4703002E8550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDC7D7B3C8892F340794D47 /* Pods-ParrotDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParrotDemo.debug.xcconfig"; path = "Target Support Files/Pods-ParrotDemo/Pods-ParrotDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C338912250742DD008C85BB /* ducky.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ducky.tflite; sourceTree = "<group>"; };
 		3C8BA8552501DF96004088C1 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		3C8BA8562501DF96004088C1 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
 		3C8BA8572501DF96004088C1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3C8BA85C2501DFCA004088C1 /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
 		3C8BA85E2501E04B004088C1 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		3C8BA8612501E838004088C1 /* labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
-		3C8BA8622501E838004088C1 /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
+		3C8BA8612501E838004088C1 /* coco_labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco_labelmap.txt; sourceTree = "<group>"; };
+		3C8BA8622501E838004088C1 /* coco.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = coco.tflite; sourceTree = "<group>"; };
+		3CCDD2AD250344FD007FFFB8 /* ducky_labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ducky_labelmap.txt; sourceTree = "<group>"; };
 		464650A46F4B7962287C0365 /* Pods-ParrotDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParrotDemo.release.xcconfig"; path = "Target Support Files/Pods-ParrotDemo/Pods-ParrotDemo.release.xcconfig"; sourceTree = "<group>"; };
 		90DA2A3A2F3E29DB14A618DF /* Pods_AnafiDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnafiDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,8 +229,10 @@
 		3C8BA8602501E06B004088C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3C8BA8622501E838004088C1 /* detect.tflite */,
-				3C8BA8612501E838004088C1 /* labelmap.txt */,
+				3C338912250742DD008C85BB /* ducky.tflite */,
+				3C8BA8622501E838004088C1 /* coco.tflite */,
+				3C8BA8612501E838004088C1 /* coco_labelmap.txt */,
+				3CCDD2AD250344FD007FFFB8 /* ducky_labelmap.txt */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,12 +351,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8BA8642501E838004088C1 /* detect.tflite in Resources */,
+				3CCDD2AE250344FD007FFFB8 /* ducky_labelmap.txt in Resources */,
+				3C338913250742DD008C85BB /* ducky.tflite in Resources */,
+				3C8BA8642501E838004088C1 /* coco.tflite in Resources */,
 				187EE01922DE4702002E8550 /* LaunchScreen.storyboard in Resources */,
 				187EE01622DE4702002E8550 /* Assets.xcassets in Resources */,
 				1822E25722E0B235004BCFCD /* Hud.storyboard in Resources */,
 				187EE01422DE4701002E8550 /* Main.storyboard in Resources */,
-				3C8BA8632501E838004088C1 /* labelmap.txt in Resources */,
+				3C8BA8632501E838004088C1 /* coco_labelmap.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

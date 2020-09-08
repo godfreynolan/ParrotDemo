@@ -209,7 +209,6 @@ class HudViewController: UIViewController {
 extension HudViewController {
 
     func captureImage() {
-//        print("CAPTURE IMAGE")
         // captures the current frame of the video feed as an image
         let fps = 1.0
         let seconds = 1.0 / fps
@@ -220,9 +219,7 @@ extension HudViewController {
     }
     
     func processImage(_ image:UIImage) {
-//        print("PROCESS IMAGE")
         let pixelBuffer:CVPixelBuffer = image.pixelBuffer()!
-//        overlayView.backgroundColor = UIColor(white: 1, alpha: 0.0)
         guard let inferences = self.modelDataHandler.runModel(onFrame: pixelBuffer) else {
             return
         }
