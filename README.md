@@ -46,9 +46,9 @@ If you would like to train an object detector, you can follow our example colab 
 ## Acknowledgements
 
 This repository was heavily influenced by the following:
-* https://github.com/riis/parrot
-* https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/eager_few_shot_od_training_tf2_colab.ipynb, 
-* https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios
+* github.com/riis/parrot
+* github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/eager_few_shot_od_training_tf2_colab.ipynb, 
+* github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios
 
 ## Contributors
 
