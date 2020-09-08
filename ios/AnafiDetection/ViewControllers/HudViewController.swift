@@ -190,21 +190,6 @@ class HudViewController: UIViewController {
     }
 }
 
-//extension HudViewController: YuvSinkListener {
-//
-//    func frameReady(sink: StreamSink, frame: SdkCoreFrame) {
-//        captureImage()
-//    }
-//
-//    func didStart(sink: StreamSink) {
-//
-//    }
-//
-//    func didStop(sink: StreamSink) {
-//
-//    }
-//}
-
 // Handle Image processing and the overlay
 extension HudViewController {
 
