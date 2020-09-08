@@ -213,17 +213,16 @@ extension HudViewController {
         let fps = 1.0
         let seconds = 1.0 / fps
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            self.processImage(self.streamView.snapshot)
+            self.runInference(self.streamView.snapshot)
             self.captureImage()
         }
     }
     
-    func processImage(_ image:UIImage) {
+    func runInference(_ image:UIImage) {
         let pixelBuffer:CVPixelBuffer = image.pixelBuffer()!
         guard let inferences = self.modelDataHandler.runModel(onFrame: pixelBuffer) else {
             return
         }
-        print("INFERENCE COUNT: \(inferences.count)")
         let width = CVPixelBufferGetWidth(pixelBuffer)
         let height = CVPixelBufferGetHeight(pixelBuffer)
         DispatchQueue.main.async {
@@ -233,7 +232,6 @@ extension HudViewController {
     }
     
     func drawDetections(onInferences inferences: [Inference], withImageSize imageSize:CGSize) {
-       print("DRAW DETECTIONS")
        self.overlayView.objectOverlays = []
        self.overlayView.setNeedsDisplay()
 
