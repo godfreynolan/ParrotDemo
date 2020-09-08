@@ -1,18 +1,16 @@
-# Parrot SDK Demo
-This app is meant to be a simpler entry point to the iOS version of Parrot's GroundSDK
+# Parrot Anafi Object Detection Demo
+This repository demonstrates how to train, quantize, and deploy a few-shot object detection model 
+trained on only 5 rubber-ducky images. We deploy the model on iOS for performing inference on live video captured from the Parrot Anafi drone.
 
-## Features
-* Connect to drone
-* Take off
-* Manual flight with joysticks
-* Land
+It is important to note that this is a proof-of-concept and not intended for production. 
 
 ## Requirements
 
-* Xcode 10.2+
-* iOS 10.0+
+* Parrot Anafi Drone
+* Xcode 11.7+
+* iOS 12.2+
 
-## Setup
+## App Setup
 
 Open up Terminal, cd into your top-level project directory, and run the following commands
 
@@ -21,4 +19,33 @@ pod repo update
 pod install
 ```
 
-Once the pods have been installed, you can open the .xcworkspace file and start coding!
+Once the pods have been installed, you can open the .xcworkspace file and start coding.
+
+## Object Detection
+
+This app ships with both the trained rubber-ducky detector model, as well as a model trained on the [COCO dataset](https://cocodataset.org/#home). 
+By default, the app runs the rubber-ducky model. If you would like to try out the COCO model, you must alter the following in `ModelDataHandler.swift`
+
+```swift
+// Replace this 
+enum MobileNetSSD {
+  static let modelInfo: FileInfo = (name: "ducky", extension: "tflite")
+  static let labelsInfo: FileInfo = (name: "ducky_labelmap", extension: "txt")
+}
+// With this 
+enum MobileNetSSD {
+  static let modelInfo: FileInfo = (name: "coco", extension: "tflite")
+  static let labelsInfo: FileInfo = (name: "coco_labelmap", extension: "txt")
+}
+```
+
+## Acknowledgements
+
+This repository was heavily influenced by the following:
+* https://github.com/riis/parrot
+* https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/eager_few_shot_od_training_tf2_colab.ipynb, 
+* https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios
+
+## Contributors
+
+Ian Timmis, itimmis@riis.com
